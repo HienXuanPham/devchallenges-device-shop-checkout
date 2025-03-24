@@ -39,7 +39,9 @@ main {
 }
 
 .checkout-summary {
-  background-color: var(--gray-4-clr);
+  background-color: var(--gray-3-clr);
+  padding: 1.25rem;
+  margin: 1.5rem;
 }
 
 .product-list {
@@ -47,11 +49,31 @@ main {
 }
 
 .product {
-  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.product-img-container {
+  background-color: var(--white-clr);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-2-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 1.5rem;
 }
 
 .product-details {
   flex-direction: column;
+  flex: 1;
   justify-content: space-between;
   gap: 0.8rem;
 }
