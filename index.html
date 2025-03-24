@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -34,11 +39,14 @@
               />
             </div>
             <div class="product-details">
-              <p>iPhone 12 Pro</p>
+              <p class="bold">iPhone 12 Pro</p>
               <p>Golden</p>
-              <p>x 1</p>
+              <p class="product-quantity">x 1</p>
             </div>
-            <p>$999.00</p>
+            <div class="flex product-price-container">
+              <p class="product-price bold">$999.00</p>
+              <button class="cancel-btn">&#x2715;</button>
+            </div>
           </div>
           <div class="product flex">
             <div class="product-img-container">
@@ -49,11 +57,14 @@
               />
             </div>
             <div class="product-details">
-              <p>Apple Watch</p>
+              <p class="bold">Apple Watch</p>
               <p>Blue</p>
-              <p>x 1</p>
+              <p class="product-quantity">x 1</p>
             </div>
-            <p>$399.00</p>
+            <div class="flex product-price-container">
+              <p class="product-price bold">$399.00</p>
+              <button class="cancel-btn">&#x2715;</button>
+            </div>
           </div>
           <div class="product flex">
             <div class="product-img-container">
@@ -64,14 +75,18 @@
                 />
             </div>
             <div class="product-details">
-              <p>iMac</p>
+              <p class="bold">iMac</p>
               <p>Green</p>
-              <p>x 1</p>
+              <p class="product-quantity">x 1</p>
             </div>
-            <p>$1199.00</p>
+            <div class="flex product-price-container">
+              <p class="product-price bold">$1199.00</p>
+              <button class="cancel-btn">&#x2715;</button>
+            </div>
           </div>
         </div>
-        <div class="checkout-coupon">
+        <hr class="line-break">
+        <div class="flex checkout-coupon">
           <input type="text" placeholder="Enter coupon code" />
           <button class="btn-coupon">Apply Coupon</button>
         </div>
