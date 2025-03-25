@@ -34,7 +34,7 @@ main {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -4.5rem;
+  margin-top: -1.5rem;
   overflow: hidden;
   border: 1px solid var(--gray-2-clr);
   border-radius: 0.5rem;
@@ -64,23 +64,25 @@ button {
   font-weight: bold;
 }
 
-.checkout-header {
-  background-image: url("../resources/Expand_down.svg");
+.background-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--white-clr);
   width: 100%;
-  height: 150px;
+  height: 10rem;
+  object-fit: cover;
 }
 
 .header-title {
   font-weight: var(--font-fw-regular);
+  color: var(--white-clr);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   padding: 1.5rem;
+  margin-top: -9.5rem;
+  margin-bottom: 2rem;
 }
 
 .checkout-header h1 {
@@ -92,7 +94,7 @@ button {
 }
 
 .item-badge {
-  background-color: var(--black-clr);
+  background-color: #95aad0;
   color: var(--white-clr);
   padding: 0.3rem 0.7rem;
   border-radius: 1rem;
