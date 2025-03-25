@@ -12,9 +12,12 @@
   --gray-3-clr: #E5E7EB;
   --gray-4-clr: #F3F4F6;
   --font-fw-regular: 400;
+  --font-fw-medium: 500;
 
-  --font-size-1: 2.4rem;
-  --font-size-2: 1.6rem;
+  --font-size-1: 1.2rem;
+  --font-size-2: 0.8rem;
+  --font-size-3: 0.6rem;
+  --font-size-4: 0.5rem;
 }
 
 body {
@@ -92,7 +95,7 @@ button {
   gap: 0.8rem;
   margin-left: 1rem;
   font-weight: var(--font-fw-regular);
-  font-size: small;
+  font-size: var(--font-size-2);
 }
 
 .product-details > :first-child {
@@ -118,13 +121,13 @@ button {
 }
 
 .product-price {
-  font-size: small;
+  font-size: var(--font-size-2);
 }
 
 .cancel-btn {
   color: var(--gray-1-clr);
   cursor: pointer;
-  font-size: 0.5rem;
+  font-size: var(--font-size-4);
 }
 
 .line-break {
@@ -132,19 +135,109 @@ button {
   margin-bottom: 1rem;
 }
 
+.checkout-total-container {
+  margin-top: 1rem;
+}
+
+.checkout-subtotal, .checkout-tax {
+  justify-content: space-between;
+  color: var(--gray-1-clr);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-fw-medium);
+  margin-bottom: 0.5rem;
+}
+
+.checkout-total {
+  justify-content: space-between;
+  color: var(--black-clr);
+  font-size: var(--font-size-2);
+}
+
 .checkout-contact {
   flex: 1;
 }
 
 .checkout-coupon {
+  justify-content: space-between;
+}
+
+.coupon-box {
+  flex: 1;
+  background-color: var(--white-clr);
+  border-radius: 0.3rem;
+  border: 1px solid var(--gray-2-clr);
+  padding: 0.5rem;
+  align-items: center;
+  font-size: var(--font-size-3);
 }
 
 .btn-coupon {
   background-color: var(--black-clr);
   color: var(--white-clr);
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
   padding: 0.5rem 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   cursor: pointer;
-  font-size: 0.5rem;
+  font-size: var(--font-size-4);
+}
+
+.checkout-contact {
+  padding: 1.25rem 1.25rem 1.25rem 0;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+  font-size: var(--font-size-3);
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: var(--gray-1-clr);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-fw-medium);
+}
+
+.name, .email {
+  display: grid;
+  margin: 1rem 0 0.5rem 0;
+}
+
+#name, #email, #country, #postal-code {
+  background-color: var(--white-clr);
+  border-radius: 0.3rem;
+  border: 1px solid var(--gray-2-clr);
+  padding: 0.5rem;
+}
+
+.country-postal-code-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+select, input {
+  width: 100%;
+  font-size: var(--font-size-4);
+}
+
+.btn-continue-container {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.btn-continue {
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: var(--font-size-4);
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
 }

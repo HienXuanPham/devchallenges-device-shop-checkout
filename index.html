@@ -87,19 +87,19 @@
         </div>
         <hr class="line-break">
         <div class="flex checkout-coupon">
-          <input type="text" placeholder="Enter coupon code" />
-          <button class="btn-coupon">Apply Coupon</button>
+          <input type="text" placeholder="Enter coupon code" class="coupon-box"/>
+          <button class="btn-coupon bold">Apply Coupon</button>
         </div>
-        <div class="checkout-total">
-          <div class="checkout-subtotal">
+        <div class="checkout-total-container">
+          <div class="flex checkout-subtotal">
             <p>Sub total</p>
             <p>$2597.00</p>
           </div>
-          <div class="checkout-tax">
+          <div class="flex checkout-tax">
             <p>Tax</p>
             <p>$623.28</p>
           </div>
-          <div class="checkout-total-amount">
+          <div class="flex checkout-total bold">
             <p>Total</p>
             <p>$3220.28</p>
           </div>
@@ -108,7 +108,7 @@
       <section class="checkout-contact">
         <h2>Contact Information</h2>
         <form>
-          <div class="form-group"> 
+          <div class="form-group name"> 
             <label for="name">First & Last name</label>
             <input
               type="text"
@@ -116,7 +116,7 @@
               placeholder="Enter first & last name"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group email">
             <label for="email">Email Address</label>
             <input
               type="text"
@@ -124,23 +124,29 @@
               placeholder="Enter email address"
             />
           </div>
-          <div class="form-group">
-            <label for="country">Country</label>
-            <select name="country" id="country">
-              <option value="Finland">Finland</option>
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              <option value="UK">UK</option>
-            </select>
+          <div class="country-postal-code-group">
+            <div class="form-group country">
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="Finland">Finland</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+              </select>
+            </div>
+            <div class="form-group postal-code">
+              <label for="postal-code">Postal Code</label>
+              <input
+                type="text"
+                id="postal-code"
+                placeholder="00270"
+              />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="postal-code">Postal Code</label>
-            <input
-              type="text"
-              id="postal-code"
-              placeholder="00270"
-            />
+          <div class="flex btn-continue-container">
+            <button class="btn-continue bold">Continue</button>
           </div>
+        </form>
       </section>
     </main>
     <footer>
