@@ -18,18 +18,27 @@
   --font-size-2: 0.8rem;
   --font-size-3: 0.6rem;
   --font-size-4: 0.5rem;
+
+  --box-shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
 }
 
 body {
   height: 100vh;
   font-family: "Inter", sans-serif;
-  /* font-size: var(--font-size-2); */
-  /* background-image: url("/resources/background-image.png"); */
+  font-size: var(--font-size-1);
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -4.5rem;
+  overflow: hidden;
+  border: 1px solid var(--gray-2-clr);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
 }
 
 button {
@@ -37,7 +46,7 @@ button {
 }
 
 .author-info {
-  font-size: 14px;
+  font-size: var(--font-size-4);
   text-align: center;
   margin-top: 16px;
   color: rgb(55, 65, 81);
@@ -55,10 +64,43 @@ button {
   font-weight: bold;
 }
 
+.checkout-header {
+  background-image: url("/resources/background-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white-clr);
+  width: 100%;
+  height: 150px;
+}
+
+.header-title {
+  font-weight: var(--font-fw-regular);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+.checkout-header h1 {
+  font-size: var(--font-size-1);
+}
+
+.checkout-header span {
+  font-size: var(--font-size-3);
+}
+
+.item-badge {
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+}
+
 .checkout-summary {
   background-color: var(--gray-3-clr);
   padding: 1.25rem;
-  margin: 1.5rem;
 }
 
 .product-list {
@@ -71,8 +113,8 @@ button {
 
 .product-img-container {
   background-color: var(--white-clr);
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 0.5rem;
   border: 1px solid var(--gray-2-clr);
   display: flex;
@@ -82,8 +124,8 @@ button {
 }
 
 .product-img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
   max-width: 1.5rem;
 }
@@ -95,7 +137,7 @@ button {
   gap: 0.8rem;
   margin-left: 1rem;
   font-weight: var(--font-fw-regular);
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
 }
 
 .product-details > :first-child {
@@ -121,7 +163,7 @@ button {
 }
 
 .product-price {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
 }
 
 .cancel-btn {
@@ -136,7 +178,7 @@ button {
 }
 
 .checkout-total-container {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 .checkout-subtotal, .checkout-tax {
@@ -182,9 +224,9 @@ button {
 }
 
 .checkout-contact {
-  padding: 1.25rem 1.25rem 1.25rem 0;
-  margin: 1.5rem 1.5rem 1.5rem 0;
+  padding: 1.25rem;
   font-size: var(--font-size-3);
+  background-color: var(--white-clr);
 }
 
 label {
@@ -222,7 +264,7 @@ label {
 
 select, input {
   width: 100%;
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-3);
 }
 
 .btn-continue-container {
@@ -236,8 +278,20 @@ select, input {
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
   cursor: pointer;
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-3);
   margin-top: 1rem;
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+  main {
+    width: 100%;
+    grid-template-columns: 1fr;  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    width: 90%;
+  }
 }
