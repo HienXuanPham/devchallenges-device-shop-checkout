@@ -65,7 +65,7 @@ button {
 }
 
 .checkout-header {
-  background-image: url("/resources/background-image.png");
+  background-image: url("../resources/Expand_down.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
