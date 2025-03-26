@@ -25,23 +25,16 @@
 html, body {
   font-family: "Inter", sans-serif;
   font-size: var(--font-size-1);
-  position: fixed;
-  width: 100%;
-  height: 100%;
   height: 100vh;
   width: 100vw;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   overflow: auto;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 95%;
-  height: auto;
+  width: 100%;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: -1.5rem;
@@ -304,6 +297,6 @@ select, input {
 
 @media (max-width: 1024px) {
   main {
-    width: 80%;
+    width: 90%;
   }
 }
